@@ -1,0 +1,19 @@
+<br>
+<div *ngFor="let item of reviewsCollection">
+    <br>
+    <div class="frame">
+        <img src="../../assets/img/avatar.png" class="img-avatar">
+        <div class="text-frame" >
+            <h2 class="text">{{item.name}}</h2>
+            <h3 class="text-small">{{item.review}}</h3>
+        </div>
+    </div>
+</div>
+<br>
+<div class="frame-input">
+    <h3 class="text-small">Your name:</h3>
+    <input type="text" placeholder="Anonym" [(ngModel)]="name">
+    <h3 class="text-small">Your comment:</h3>
+    <textarea placeholder="Review" rows="5" cols="61" [(ngModel)]="comment"></textarea>
+    <button class="btn" (click)="Submit($event)">Submit</button>
+</div>

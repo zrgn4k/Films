@@ -1,0 +1,5 @@
+<div class="frame" *ngFor="let item of filmsCollection ">
+    <img src={{item.imagePath}} alt={{item.name}} class="film-image">
+    <h1 class="text">{{item.name}}</h1>
+    <h3 class="text-small">{{item.description}}..</h3>
+</div>
